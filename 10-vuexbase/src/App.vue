@@ -14,11 +14,20 @@ import Counter from "./components/Counter.vue";
   </header>
 
   <main>
-    <counter/>
+    <router-view/>
+    <nav>
+      <router-link to="/">counter</router-link>
+      <router-link to ="/counter2">contador</router-link>
+      
+    </nav>
   </main>
 </template>
 
 <style scoped>
+nav a{
+  margin-right: 10px;
+  font-size: 20px;
+}
 header {
   line-height: 1.5;
 }

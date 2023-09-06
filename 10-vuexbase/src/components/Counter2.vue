@@ -1,6 +1,6 @@
 <template>
-<h1>Counter: example basic </h1>
-<h2>red stare{{ $store.state.count}}</h2>
+<h1>Contador con base en modulos </h1>
+<h2>red stare{{ $store.state.module.count}}</h2>
 <h2>propiedad computada: {{ computedProperti }} </h2>
 <h2>lectura del mapStated es: {{ count }} </h2>
 <h2>lectura del mapStated es mostrando el segundo: {{ siguientemutacion }} </h2>

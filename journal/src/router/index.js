@@ -3,7 +3,7 @@ import HomeView from '../views/HomeView.vue'
 // import dayBookRouter from '@/modules/daybook/router'
 import dayBookRouter from '../modules/daybook/router'  //lo voy a exparcir mediante el operador spreat
 import authRouter from '../modules/auth/router'
-import pruebaRouter from '../modules/prueba/router'
+import mapRouter from '../modules/map/router'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -30,8 +30,8 @@ const router = createRouter({
       ...authRouter
     },
     {
-      path: '/prueba',
-      ...pruebaRouter
+      path: '/map',
+      ...mapRouter
     }
   ]
 })
